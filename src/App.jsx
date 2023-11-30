@@ -1,21 +1,24 @@
 import "./App.css";
 import Accordion from "./assets/components/accordion";
 import staricon from "/public/images/icon-star.svg";
+import background from "/public/images/background-pattern-desktop.svg"
 function App() {
   return (
     <>
-    
-    <div className="topBackground"></div>
+      <div className="topBackground"><img className="topBackgroundImg" src={background} alt="" /></div>
       <div className="app">
         <div className="topContainer">
           <img src={staricon} alt="" />
           <h1>FAQs</h1>
         </div>
-        
-        <Accordion open header={"What is Frontend Mentor, and how will it help me?"}>
+
+        <Accordion
+          open
+          header={"What is Frontend Mentor, and how will it help me?"}
+        >
           Frontend Mentor offers realistic coding challenges to help developers
           improve their frontend coding skills with projects in HTML, CSS, and
-          JavaScript. It's suitable for all levels and ideal for portfolio
+          JavaScript. It&apos;s suitable for all levels and ideal for portfolio
           building.
         </Accordion>
         <div className="divider"></div>
@@ -29,16 +32,17 @@ function App() {
           header={"Can I use Frontend Mentor projects in my portfolio?"}
         >
           Yes, you can use projects completed on Frontend Mentor in your
-          portfolio. It's an excellent way to showcase your skills to potential
-          employers!
+          portfolio. It&apos;s an excellent way to showcase your skills to
+          potential employers!
         </Accordion>
         <div className="divider"></div>
-        <Accordion header={"How can I get help if I'm stuck on a challenge?"}>
-          The best place to get help is inside Frontend Mentor's Discord
-          community. There's a help channel where you can ask questions and seek
-          support from other community members.
+        <Accordion
+          header={"How can I get help if I&apos;m stuck on a challenge?"}
+        >
+          The best place to get help is inside Frontend Mentor&apos;s Discord
+          community. There&apos;s a help channel where you can ask questions and
+          seek support from other community members.
         </Accordion>
-
       </div>
     </>
   );

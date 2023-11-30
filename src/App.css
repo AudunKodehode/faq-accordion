@@ -19,13 +19,12 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 35%;
   z-index: -1;
-  background-image: url("public/images/background-pattern-desktop.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+}
+.topBackground .topBackgroundImg {
+  width: 100%;
 }
 
 .topContainer {
